@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Cliente alterno</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <h1>Distinguida clientela</h1>
+	<input type="number" id="idcliente" placeholder="idcliente">
+	<input type="text" id="nombre" placeholder="nombre">
+	<input type="text" id="correoelectronico" placeholder="correoelectronico">
+	<input type="text" id="direccion" placeholder="direccion">
+        <button onclick="registro()">ok</button>
+
+	<button onclick="obtenerItems()">VER</button>
+	
+	<button onclick="actualizar()">Editar</button>
+        <div>
+            <table>
+			<tbody id="resultado">
+
+			</tbody>
+	    </table>
+        </div>
+    </body>
+</html>

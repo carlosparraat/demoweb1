@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Datos del artículo</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+        </script>
+        <script type="text/javascript" src="funcionesarticulo.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous">
+        </script>
+    </head>
+    <body>
+        <h2>Artículos</h2>
+        <div id="resultado"></div>
+        <button type="button" class="btn btn-primary saveButtonJL" onclick="traerInformacion()">Consultar</button>
+        <br>
+        <div>
+            <div class="myForm">
+                <input type="number" id="idarticulo">
+                <label for="descripcion" class="form-label">Descripción</label> 
+                <input type="text" id="descripcion">
+                <label for="precio" class="form-label">Precio</label>
+                <input type="number" id="precio">
+            </div>
+        </div>
+        <br>
+        <button type="button" class="btn btn-primary saveButtonJL" onclick="guardarInformacion()"> Guardar!</button>
+        <button type="button" class="btn btn-primary saveButtonJL" onclick="editarInformacion()"> Actualizar </button>
+    </body>
+</html>
